@@ -1,0 +1,7 @@
+services:
+    sheer.disable_edit_after_reply.listener:
+        class: sheer\disable_edit_after_reply\event\listener
+        arguments:
+            - '@request'
+        tags:
+            - { name: event.listener }
